@@ -1,6 +1,16 @@
-body{
-  padding: 25px;
+body {
+  font-family: sans-serif;
+  padding: 20px;
 }
-.title {
-	color: #5C6AC4;
+
+textarea {
+  width: 300px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+#textoSalvo {
+  background: #f0f0f0;
+  padding: 10px;
+  min-height: 50px;
 }
