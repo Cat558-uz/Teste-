@@ -1,7 +1,13 @@
-function showTime() {
-	document.getElementById('currentTime').innerHTML = new Date().toUTCString();
+function salvarTexto() {
+  const texto = document.getElementById("inputText").value;
+  localStorage.setItem("meuTexto", texto);
+  mostrarTexto();
 }
-showTime();
-setInterval(function () {
-	showTime();
-}, 1000);
+
+function mostrarTexto() {
+  const textoSalvo = localStorage.getItem("meuTexto");
+  document.getElementById("textoSalvo").innerText = textoSalvo || "Nada salvo ainda.";
+}
+
+// Mostra automaticamente ao abrir a página
+mostrarTexto();
