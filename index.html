@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello, World!</title>
+    <title>Salvar Texto</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
+    <h1 class="title">Salvador de Texto</h1>
+    
+    <textarea id="inputText" placeholder="Digite algo aqui..."></textarea><br>
+    <button onclick="salvarTexto()">Salvar</button>
+
+    <h2>Texto Salvo:</h2>
+    <div id="textoSalvo"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
